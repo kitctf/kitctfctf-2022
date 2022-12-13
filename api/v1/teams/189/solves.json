@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "name": "Insanity Check", "id": 9, "category": "misc"}, "team": {"name": "HackTeam", "id": 189}, "type": "correct", "user": {"name": "quelysol", "id": 304}, "date": "2022-12-09T19:36:55.335640+00:00", "id": 339, "challenge_id": 9}], "meta": {"count": 1}}

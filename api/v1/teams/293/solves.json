@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "name": "Insanity Check", "id": 9, "category": "misc"}, "team": {"name": "IOSec", "id": 293}, "type": "correct", "user": {"name": "Rax082", "id": 204}, "date": "2022-12-09T18:04:47.278550+00:00", "id": 60, "challenge_id": 9}], "meta": {"count": 1}}

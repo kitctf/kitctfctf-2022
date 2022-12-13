@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "name": "Insanity Check", "id": 9, "category": "misc"}, "team": {"name": "TKJCTF", "id": 234}, "type": "correct", "user": {"name": "Freyza", "id": 388}, "date": "2022-12-10T01:11:12.257210+00:00", "id": 818, "challenge_id": 9}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "name": "Insanity Check", "id": 9, "category": "misc"}, "team": {"name": "Team Panitia", "id": 141}, "type": "correct", "user": {"name": "Ketua Panitia", "id": 212}, "date": "2022-12-09T18:41:10.883041+00:00", "id": 226, "challenge_id": 9}], "meta": {"count": 1}}

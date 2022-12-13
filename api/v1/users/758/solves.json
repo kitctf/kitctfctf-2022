@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 494, "name": "Grep it? CodeQL it! 1", "id": 20, "category": "codeql"}, "team": {"name": "testtesttest", "id": 433}, "type": "correct", "user": {"name": "testtesttest", "id": 758}, "date": "2022-12-10T13:48:12.829761+00:00", "id": 1232, "challenge_id": 20}], "meta": {"count": 1}}

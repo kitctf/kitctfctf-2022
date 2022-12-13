@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 457, "name": "movsh", "id": 1, "category": "pwn"}, "team": {"name": "Armitage", "id": 239}, "type": "correct", "user": {"name": "nobodyisnobody", "id": 399}, "date": "2022-12-10T23:49:43.042688+00:00", "id": 1543, "challenge_id": 1}], "meta": {"count": 1}}

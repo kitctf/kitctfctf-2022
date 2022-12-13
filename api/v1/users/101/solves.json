@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "name": "Insanity Check", "id": 9, "category": "misc"}, "team": {"name": "PurpleCorp", "id": 31}, "type": "correct", "user": {"name": "buckeye", "id": 101}, "date": "2022-12-09T18:26:13.392136+00:00", "id": 176, "challenge_id": 9}], "meta": {"count": 1}}

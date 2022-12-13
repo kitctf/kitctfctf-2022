@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 457, "name": "movsh", "id": 1, "category": "pwn"}, "team": {"name": "CubeMastery", "id": 11}, "type": "correct", "user": {"name": "SkrubLawd", "id": 345}, "date": "2022-12-09T23:37:55.325021+00:00", "id": 770, "challenge_id": 1}], "meta": {"count": 1}}

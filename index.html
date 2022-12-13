@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KITCTFCTF</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/files/16f7cf91d38b97742ee58f5b26009935/KITCTF_favicon.png" type="image/x-icon">
+
+  
+    <link rel="stylesheet" href="/themes/kasino/static/assets/main.67b20ad2.css">
+  
+
+  
+
+  <script type="text/javascript">
+      window.init = {
+          'urlRoot': "",
+          'csrfNonce': "1ca683c2cd0807a1cd4978a1ca71849297de649b817530f8d2a8cce85a14d34a",
+          'userMode': "teams",
+          'userId': 0,
+          'userName': null,
+          'userEmail': null,
+          'teamId': null, 
+          'teamName': null,
+          'start': 1670608800,
+          'end': 1670716800,
+          'themeSettings': null,
+          'eventSounds': [
+            "/themes/core/static/sounds/notification.webm",
+            "/themes/core/static/sounds/notification.mp3",
+          ],
+      }
+  </script>
+
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a href="/" class="navbar-brand">
+      
+        <img
+            class="img-responsive ctf_logo"
+            src="/files/d4fed38fe386a908d88ee6a2fa0bdd59/KITCTFCTF_dark_512.png"
+            alt="KITCTFCTF"
+            height="25"
+        >
+      
+    </a>
+
+    <button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#base-navbars"
+        aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="base-navbars">
+      <ul class="navbar-nav me-auto">
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/users">Users</a>
+          </li>
+
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/teams">Teams</a>
+            </li>
+          
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/scoreboard">Scoreboard</a>
+          </li>
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/challenges">Challenges</a>
+        </li>
+      </ul>
+
+      <hr class="d-sm-flex d-md-flex d-lg-none">
+
+      <ul class="navbar-nav ms-md-auto d-block d-sm-flex d-md-flex">
+        
+
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/register">
+                <span
+                    class="d-block" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Register"
+                >
+                  <i class="fas fa-user-plus d-none d-md-block d-lg-none"></i>
+                </span>
+                <span class="d-sm-block d-md-none d-lg-block">
+                  <i class="fas fa-user-plus pe-1"></i>Register
+                </span>
+              </a>
+            </li>
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="/login">
+              <span class="d-block" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+                <i class="fas fa-sign-in-alt d-none d-md-block d-lg-none"></i>
+              </span>
+              <span class="d-sm-block d-md-none d-lg-block">
+                <i class="fas fa-sign-in-alt pe-1"></i>Login
+              </span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main role="main">
+  
+  <svg class="defs" aria-labelledby="svgTitle">
+  <title id="svgTitle">SVG definitions</title>
+  <defs>
+    <clipPath id="upper-clip" clipPathUnits="objectBoundingBox">
+      <path
+        d="m0.49896 0.56481-0.048763 0.089181h-0.14893l-0.20261-0.049049h-0.098659v0.39507h1v-0.39626l-0.094879 0.006688-0.20904 0.04459h-0.14856z"
+        fill="#fff" fill-rule="evenodd" stop-color="#000000" stroke-width="0" />
+    </clipPath>
+  </defs>
+</svg>
+<style>
+  main {
+    background: rgb(5, 39, 87);
+    background-image: linear-gradient(180deg,
+        rgba(5, 39, 87, 1) 0%,
+        rgba(3, 74, 156, 1) 50%,
+        rgba(79, 91, 151, 1) 80%);
+    contain: paint;
+  }
+
+  .defs {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  .counter-placeholder {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .counter-placeholder {
+      display: inherit;
+    }
+  }
+
+  .subheader-2 {
+    font-size: calc(0.6rem + 2.026vw);
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  @media (min-width: 1200px) {
+    .subheader-2 {
+      font-size: 2.125rem;
+    }
+  }
+
+  .top-container {
+    padding-bottom: 36.57vw;
+  }
+
+  .image-container {
+    margin-top: -36.57vw;
+    height: calc(100% + 36.57vw);
+    z-index: -1;
+  }
+
+  @media (min-width: 768px) {
+    .top-container {
+      padding-bottom: calc(36.57vw - 6rem);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .top-container {
+      padding-bottom: calc(512px - 6rem);
+    }
+
+    .image-container {
+      margin-top: -512px;
+      height: calc(100% + 512px);
+    }
+  }
+
+  .image-container :first-child {
+    width: 205.71vw;
+    height: 52.34vw;
+    position: sticky;
+    top: calc(100vh - 52.34vw);
+  }
+
+  @media (min-width: 1400px) {
+    .image-container :first-child {
+      width: 2880px;
+      height: 732.73px;
+      top: calc(100vh - 732.733px);
+    }
+  }
+
+  #tsparticles {
+    clip-path: url("#upper-clip");
+    background-color: #fff;
+  }
+</style>
+<div class="top-container">
+  <img class="w-100 mx-auto d-block" style="max-width: 512px;padding: 50px;padding-top: 8vh;"
+    src="/themes/kasino_tmp/static/img/logo.png" alt="KITCTFCTF logo" />
+  <div x-data="timer(new Date('2022-12-09T18:00:00Z').getTime(), new Date('2022-12-11T00:00:00Z').getTime())" x-init="init();">
+    <div
+      x-data="{toend: (new Date('2022-12-11T00:00:00Z').getTime() - new Date().getTime() < Math.min(24 * 60 * 60 * 1000, new Date('2022-12-11T00:00:00Z').getTime() - new Date('2022-12-09T18:00:00Z').getTime()))}">
+      <template x-if="!toend && time().remaining > 0">
+        <p class="text-center h2 text-light">CTF starts in:</p>
+      </template>
+      <template x-if="!toend && time().remaining == 0">
+        <p class="text-center h2 text-light">CTF has
+          started. <a href="/register">Register</a> now!</p>
+      </template>
+      <template x-if="toend && time().remaining > 0">
+        <div>
+          <p class="text-center h2 mb-4 text-light">CTF has
+            started. <a href="/register">Register</a> now!</p>
+          <p class="text-center h2 text-light">Hack harder! Event ends in:</p>
+        </div>
+      </template>
+      <template x-if="toend && time().remaining == 0">
+        <p class="text-center h2 text-light">CTF has
+          ended. Thank you all and see you next time!</p>
+      </template>
+    </div>
+    <div class="container col-xl-8 col-md-10 text-center text-light">
+      <div class="row h1">
+        <p class="col" x-text="time().days"></p>
+        <p class="col" x-text="time().hours"></p>
+        <div class="col counter-placeholder"></div>
+        <p class="col" x-text="time().minutes"></p>
+        <p class="col" x-text="time().seconds"></p>
+      </div>
+      <div class="row subheader-2">
+        <p class="col">Days</p>
+        <p class="col">Hours</p>
+        <div class="col counter-placeholder"></div>
+        <p class="col">Minutes</p>
+        <p class="col">Seconds</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="position-relative">
+  <div class="image-container position-absolute start-50 translate-middle-x">
+    <img src="/themes/kasino_tmp/static/img/palace_lower.svg" alt="karlsruhe palace background" />
+  </div>
+  <div class="image-container position-absolute start-50 translate-middle-x">
+    <div id="tsparticles"></div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="inverted col-md-8 offset-md-2 p-4 mb-4 rounded bg-light bg-opacity-75">
+        <h2>General Information</h2>
+        <p>Welcome to the KAsino edition of the KITCTFCTF!</p>
+        <ul>
+          <li>Everyone can participate! You may play alone but it's more fun together plus you can share your knowledge
+            to learn from each other.</li>
+          <li>The contest is a jeopardy-style CTF with challenges from all major categories and beginner-friendly to
+            hard difficulty.</li>
+          <li>The CTF will last 30 hours, from <a
+              href="https://ctftime.org/event/1810"><code>09 Dec. 2022, 18:00 UTC — Sat, 10 Dec. 2022, 23:59 UTC</code></a>.
+          </li>
+          <li>Join the Discord (<a href="https://discord.gg/PFWE7eAMRv">https://discord.gg/PFWE7eAMRv</a>) or the IRC
+            (#kitctfctf on libera.chat)! Announcements and updates will be published there.</li>
+          <li>The flag format is <code>KCTF{.*}</code> (only printable ASCII characters), unless specified otherwise in
+            the challenge description.</li>
+        </ul>
+        <h1>Sponsors and Partners</h1>
+        <ul style="list-style: none;">
+          <li>
+            <p>
+              <img src="/themes/kasino/static/img/aramido-logo.svg" alt="Aramido">
+            </p>
+            <p>
+              <a href="https://aramido.de/">Aramido</a> is a Karlsruhe based company offering IT security consulting and
+              testing.
+            </p>
+          </li>
+          <li>
+            <p>
+              <img width="320px" src="/themes/kasino/static/img/github_security_lab_purple.svg"
+                alt="GitHub Security Lab">
+            </p>
+            <p>
+              <a href="https://securitylab.github.com/">GitHub Security Lab</a>'s mission is to inspire and enable the
+              community to secure the open source software we all depend on.
+            </p>
+          </li>
+          <li>
+            <p>
+              <img src="/themes/kasino/static/img/codelayer.svg" alt="codelayer">
+            </p>
+            <p>
+              <a href="https://codelayer.de?utm_source=kitctf">codelayer</a> is a Karlsruhe based full-stack development
+              company specialized in web technologies.
+            </p>
+          </li>
+        </ul>
+        <h1>Prizes</h1>
+        <ul>
+          <li>1st place: $500</li>
+          <li>2nd place: $300</li>
+          <li>3rd place: $200</li>
+          <li>We cannot give prizes to individuals on the U.S. sanctions list, or any individual residing in any
+            U.S.-sanctioned country.</li>
+        </ul>
+        <h1>Rules</h1>
+        <p>During the contest, any of the following behaviors will result in immediate disqualification:</p>
+        <ul>
+          <li>Any behavior that affects the fairness of the contest.</li>
+          <li>Posting or sharing task solutions or flags.</li>
+          <li>Attacking the contest infrastructure or systems of organizers or other participants.</li>
+          <li>Exploiting unintended solutions or vulnerabilities in the infrastructure. If you find anything like that
+            please share it for possible bonus points.</li>
+          <li>Violation of the Code of Conduct.</li>
+        </ul>
+        <p>Each player may only join one team.</p>
+        <h1>Code of Conduct</h1>
+        <ul>
+          <li>Be considerate, respectful, and collaborative.</li>
+          <li>Refrain from demeaning, discriminatory or harassing behavior or speech.</li>
+          <li>Be mindful of your surroundings and your fellow participants - your fellow participants may have a
+            different understanding of language and personal space.</li>
+          <li>Inform the KITCTFCTF organizers if you notice any unacceptable behavior such as:
+            <ul>
+              <li>Intimidating, harassing, abusive, discriminatory, derogatory, or demeaning conduct.</li>
+              <li>Offensive verbal comments, including those related to gender, gender identity, sexual orientation,
+                disability, race, ethnicity, age, or religion.</li>
+              <li>Inappropriate use of nudity or sexual images in public and online spaces (including our public
+                channels as well as direct messages).</li>
+              <li>Deliberate intimidation, stalking or following of other users.</li>
+              <li>Harassing photography, recording, or entertaining.</li>
+              <li>Unwelcome sexual attention.</li>
+            </ul>
+          </li>
+        </ul>
+        <p>This list is not meant to be exhaustive or complete. We expect you to follow it in spirit, not only in the
+          letter.</p>
+        <p>Unacceptable behavior by participants will not be tolerated. Anyone asked to stop inappropriate behavior is
+          expected to comply immediately. If a participant engages in unacceptable behavior, KITCTFCTF organizers may,
+          at their discretion, take any action they deem appropriate, up to and including expulsion from the competition
+          and removal from the KITCTFCTF Discord.</p>
+        <h1>Disclaimer</h1>
+        <p>The theme of the CTF is only intended to enrichen the experience of the players. KITCTF does not want to
+          promote gambling in any way. Please reach out for help if you are addicted to gambling or support friends that
+          are.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function timer(expiry_start, expiry_end) {
+    return {
+      expiry: ((expiry_end - new Date().getTime() >= Math.min(24 * 60 * 60 * 1000, expiry_end - expiry_start)) ? expiry_start : expiry_end),
+      remaining: null,
+      init() {
+        this.setRemaining()
+        setInterval(() => {
+          this.setRemaining();
+        }, 1000);
+      },
+      setRemaining() {
+        const diff = Math.max(0, this.expiry - new Date().getTime());
+        this.remaining = parseInt(diff / 1000);
+      },
+      days() {
+        return {
+          value: this.remaining / 86400,
+          remaining: this.remaining % 86400
+        };
+      },
+      hours() {
+        return {
+          value: this.days().remaining / 3600,
+          remaining: this.days().remaining % 3600
+        };
+      },
+      minutes() {
+        return {
+          value: this.hours().remaining / 60,
+          remaining: this.hours().remaining % 60
+        };
+      },
+      seconds() {
+        return {
+          value: this.minutes().remaining,
+        };
+      },
+      format(value) {
+        return ("0" + parseInt(value)).slice(-2)
+      },
+      time() {
+        return {
+          remaining: this.remaining,
+          days: this.format(this.days().value),
+          hours: this.format(this.hours().value),
+          minutes: this.format(this.minutes().value),
+          seconds: this.format(this.seconds().value),
+        }
+      },
+    }
+  }
+</script>
+<script
+  src="https://cdn.jsdelivr.net/npm/tsparticles-preset-big-circles@2/tsparticles.preset.bigCircles.bundle.min.js"></script>
+<script>
+  (async () => {
+    await tsParticles.load("tsparticles", {
+      fullScreen: false,
+      preset: "bigCircles",
+      motion: {
+        disable: true,
+      },
+      particles: {
+        move: {
+          speed: 1,
+        }
+      }
+    });
+
+    await new Promise(r => setTimeout(r, 100));
+    console.log("here");
+    const particles = tsParticles.domItem(0);
+    particles.pause();
+  })();
+</script>
+
+</main>
+
+<footer class="footer">
+  <div class="container text-center">
+    <a href="https://ctfd.io" class="text-secondary">
+      <small class="text-muted">Powered by CTFd</small>
+    </a>
+  </div>
+</footer>
+
+<div x-data>
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div x-ref="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto" x-text="$store.toast.title"></strong>
+        <small>just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" x-html="$store.toast.html">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div x-data>
+  <div class="modal" x-ref="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" x-text="$store.modal.title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p x-html="$store.modal.html"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script defer type="module" src="/themes/kasino/static/assets/index.00892cd3.js"></script><script defer type="module" src="/themes/kasino/static/assets/page.e6537a8e.js"></script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 100, "name": "Insanity Check", "id": 9, "category": "misc"}, "team": {"name": "TamilCTF", "id": 233}, "type": "correct", "user": {"name": "Jopraveen", "id": 537}, "date": "2022-12-09T18:13:28.963265+00:00", "id": 128, "challenge_id": 9}], "meta": {"count": 1}}

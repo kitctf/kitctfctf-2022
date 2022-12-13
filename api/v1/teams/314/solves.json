@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"value": 371, "name": "Enterprise Auth", "id": 14, "category": "web"}, "team": {"name": "PwnTillDawn", "id": 314}, "type": "correct", "user": {"name": "spork", "id": 548}, "date": "2022-12-09T19:10:59.045254+00:00", "id": 300, "challenge_id": 14}], "meta": {"count": 1}}
